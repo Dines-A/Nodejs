@@ -1,6 +1,9 @@
 const  http  = require("http");
 
-function ogs()
+const url = require("url")
+
+
+function ogs(route)
 {
     console.log("org-app-server");
     function imapp(req,res)
@@ -9,6 +12,6 @@ function ogs()
         res.write("im org-app-server  function module");
         res.end()
     }
-    http.createServer(imapp).listen(8081);
+    http.createServer(imapp).listen(8080);
 };
 exports.ogs = ogs;
