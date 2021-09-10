@@ -3,6 +3,8 @@ function add1(num1,num2)
 {
     return num1 + num2; 
 }
+
+
 var hold1 = add1(5,5);
 console.log(hold1);
 // arrow function

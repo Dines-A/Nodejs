@@ -1,7 +1,12 @@
-const write = require('fs')
-write.unlink('del.txt',function(err) 
-// createfile,readfile,append,unlink
-{
-    console.log("Flie saved!");
-}
+const fs = require('fs');
+
+fs.writeFile("Filewriting.txt","I created \
+this file using Filesystem!! but cant uppend",
+
+    function(err)
+    {
+        if(err) throw(err);
+        console.log("file-saved");
+    }
+
 )

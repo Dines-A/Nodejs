@@ -1,9 +1,13 @@
-var http = require('http')
-http.createServer(function(req,res)
-{
-    // res.writeHead(200,{'content-type':'text/html'});
-    res.write("welcome to node js");
-    res.end("Come again Fucker!!!..");
-    console.log("you server has been started !!");
-}
-).listen(8001);
+const http = require('http');
+
+http.createServer(
+
+    function(url,cont)
+    {
+        cont.writeHead(200,{'content-type':'text/plain'}),
+        cont.write("Hello,Im http-module"),
+        cont.write('\n'),
+        cont.end("ended")
+    }
+    
+).listen(8080);

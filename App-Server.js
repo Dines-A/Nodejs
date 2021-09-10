@@ -1,10 +1,15 @@
 const  http  = require("http");
 
-function imapp(req,res)
+function App()
 {
-    res.writeHead(200,{});
-    res.write("im app-server function module");
-    res.end()
+        function My_app(req,res)
+        {
+            console.log("Requiest-recived"),
+            res.writeHead(200,{'content-type':'text/plain'}),
+            res.write("im app-server function module"),
+            res.end()
+        }
+        http.createServer(My_app).listen(8080);
+        console.log("Server has been startd!!");
 }
-
-http.createServer(imapp).listen(8080)
+exports.App=App

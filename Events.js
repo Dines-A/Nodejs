@@ -10,5 +10,5 @@ var Funmsg=function(Msg)
 }
 eventemitter.on("HelloEveryOne",Fun1);
 eventemitter.emit("HelloEveryOne")
-eventemitter.on("KnockKnock",Funmsg);
-eventemitter.emit("KnockKnock","Weclome-X")
+eventemitter.on("Knock-Knock",Funmsg);
+eventemitter.emit("Knock-Knock","Weclome-Customer!!")
